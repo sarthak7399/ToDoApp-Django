@@ -74,51 +74,51 @@ To run the Django development server and access the ToDo app, execute the follow
 python manage.py runserver
 ```
 
-### File Structure and Roles
+## File Structure and Roles
 
-## manage.py
+### manage.py
 
 ```text
 This is a command-line utility that lets you interact with Django project. It's used for various tasks such as running the development server, creating migrations, and more
 ```
 
-## mytodoapp/
+### mytodoapp/
 
 ```text
 This is the project directory created by the startproject command. It contains settings for the project, including database configuration, URL configurations, and other project-specific settings
 ```
 
-## todo/
+### todo/
 
 ```text
 This is the app directory created by the startapp command. It contains models, views, templates, and other components related to the ToDo app
 ```
 
-## models.py
+### models.py
 
 ```text
 Defines the data models for the ToDo app. Models represent database tables and their relationships
 ```
 
-## views.py
+### views.py
 
 ```text
 Contains view functions or classes that handle requests and generate responses. Views interact with models to fetch or modify data and render templates
 ```
 
-## urls.py
+### urls.py
 
 ```text
 Defines URL patterns for the ToDo app. It maps URLs to view functions or classes
 ```
 
-## templates/
+### templates/
 
 ```text
 This directory contains HTML templates for the ToDo app. Templates are rendered with dynamic content using Django's template language
 ```
 
-## migrations/
+### migrations/
 
 ```text
 This directory stores database migrations created by Django. Migrations track changes to the database schema over time
