@@ -21,49 +21,65 @@ python -m venv myenv
 myenv\Scripts\activate
 # For macOS/Linux
 source myenv/bin/activate
+```
 
-###3. Install Django 
+### 3. Install Django
+
 With the virtual environment activated, install Django using pip:
-pip install django
 
-
+```pip install django
+```
 
 ## Basic Commands
-###Initializing a Django Project
+
+### Initializing a Django Project
+
 To initialize a new Django project, run the following command:
-django-admin startproject mytodoapp
+```django-admin startproject mytodoapp```
 
 ## Creating Django App
+
 Navigate into the project directory and create a new Django app:
-cd mytodoapp
+
+```cd mytodoapp
 django-admin startapp todo
+```
 
 ## Running Migrations
+
 Django uses migrations to manage database schema changes. Run the following commands to apply migrations:
 
-# Navigate to the project directory:
-cd mytodoapp
+### Navigate to the project directory
 
-# Run migrations:
-python manage.py migrate
+```cd mytodoapp
+```
+
+### Run migrations
+
+```python manage.py migrate
+```
 
 ## Running the Application
+
 To run the Django development server and access the ToDo app, execute the following command:
-python manage.py runserver
+
+```python manage.py runserver
+```
 
 ### File Structure and Roles
-## manage.py: This is a command-line utility that lets you interact with Django project. It's used for various tasks such as running the development server, creating migrations, and more.
 
-## mytodoapp/: This is the project directory created by the startproject command. It contains settings for the project, including database configuration, URL configurations, and other project-specific settings.
+## manage.py: This is a command-line utility that lets you interact with Django project. It's used for various tasks such as running the development server, creating migrations, and more
 
-## todo/: This is the app directory created by the startapp command. It contains models, views, templates, and other components related to the ToDo app.
+## mytodoapp/: This is the project directory created by the startproject command. It contains settings for the project, including database configuration, URL configurations, and other project-specific settings
 
-## models.py: Defines the data models for the ToDo app. Models represent database tables and their relationships.
+## todo/: This is the app directory created by the startapp command. It contains models, views, templates, and other components related to the ToDo app
 
-## views.py: Contains view functions or classes that handle requests and generate responses. Views interact with models to fetch or modify data and render templates.
+## models.py: Defines the data models for the ToDo app. Models represent database tables and their relationships
 
-## urls.py: Defines URL patterns for the ToDo app. It maps URLs to view functions or classes.
+## views.py: Contains view functions or classes that handle requests and generate responses. Views interact with models to fetch or modify data and render templates
 
-## templates/: This directory contains HTML templates for the ToDo app. Templates are rendered with dynamic content using Django's template language.
+## urls.py: Defines URL patterns for the ToDo app. It maps URLs to view functions or classes
 
-## migrations/: This directory stores database migrations created by Django. Migrations track changes to the database schema over time.
+## templates/: This directory contains HTML templates for the ToDo app. Templates are rendered with dynamic content using Django's template language
+
+## migrations/: This directory stores database migrations created by Django. Migrations track changes to the database schema over time
