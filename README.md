@@ -27,7 +27,8 @@ source myenv/bin/activate
 
 With the virtual environment activated, install Django using pip:
 
-```pip install django
+```bash
+pip install django
 ```
 
 ## Basic Commands
@@ -35,13 +36,17 @@ With the virtual environment activated, install Django using pip:
 ### Initializing a Django Project
 
 To initialize a new Django project, run the following command:
-```django-admin startproject mytodoapp```
+
+```bash
+django-admin startproject mytodoapp
+```
 
 ## Creating Django App
 
 Navigate into the project directory and create a new Django app:
 
-```cd mytodoapp
+```bash
+cd mytodoapp
 django-admin startapp todo
 ```
 
@@ -51,19 +56,22 @@ Django uses migrations to manage database schema changes. Run the following comm
 
 ### Navigate to the project directory
 
-```cd mytodoapp
+```bash
+cd mytodoapp
 ```
 
 ### Run migrations
 
-```python manage.py migrate
+```bash
+python manage.py migrate
 ```
 
 ## Running the Application
 
 To run the Django development server and access the ToDo app, execute the following command:
 
-```python manage.py runserver
+```bash
+python manage.py runserver
 ```
 
 ### File Structure and Roles
