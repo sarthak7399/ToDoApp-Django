@@ -76,18 +76,51 @@ python manage.py runserver
 
 ### File Structure and Roles
 
-## manage.py: This is a command-line utility that lets you interact with Django project. It's used for various tasks such as running the development server, creating migrations, and more
+## manage.py
 
-## mytodoapp/: This is the project directory created by the startproject command. It contains settings for the project, including database configuration, URL configurations, and other project-specific settings
+```text
+This is a command-line utility that lets you interact with Django project. It's used for various tasks such as running the development server, creating migrations, and more
+```
 
-## todo/: This is the app directory created by the startapp command. It contains models, views, templates, and other components related to the ToDo app
+## mytodoapp/
 
-## models.py: Defines the data models for the ToDo app. Models represent database tables and their relationships
+```text
+This is the project directory created by the startproject command. It contains settings for the project, including database configuration, URL configurations, and other project-specific settings
+```
 
-## views.py: Contains view functions or classes that handle requests and generate responses. Views interact with models to fetch or modify data and render templates
+## todo/
 
-## urls.py: Defines URL patterns for the ToDo app. It maps URLs to view functions or classes
+```text
+This is the app directory created by the startapp command. It contains models, views, templates, and other components related to the ToDo app
+```
 
-## templates/: This directory contains HTML templates for the ToDo app. Templates are rendered with dynamic content using Django's template language
+## models.py
 
-## migrations/: This directory stores database migrations created by Django. Migrations track changes to the database schema over time
+```text
+Defines the data models for the ToDo app. Models represent database tables and their relationships
+```
+
+
+## views.py
+
+```text
+Contains view functions or classes that handle requests and generate responses. Views interact with models to fetch or modify data and render templates
+```
+
+## urls.py
+
+```text
+Defines URL patterns for the ToDo app. It maps URLs to view functions or classes
+```
+
+## templates/
+
+```text
+This directory contains HTML templates for the ToDo app. Templates are rendered with dynamic content using Django's template language
+```
+
+## migrations/
+
+```text
+This directory stores database migrations created by Django. Migrations track changes to the database schema over time
+```
