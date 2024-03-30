@@ -100,7 +100,6 @@ This is the app directory created by the startapp command. It contains models, v
 Defines the data models for the ToDo app. Models represent database tables and their relationships
 ```
 
-
 ## views.py
 
 ```text
